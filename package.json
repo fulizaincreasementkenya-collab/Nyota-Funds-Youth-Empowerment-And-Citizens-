@@ -1,15 +1,21 @@
-# Dependencies
-node_modules/
-npm-debug.log*
-
-# Environment variables - IMPORTANT!
-.env
-.env.local
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Original files
-index.source.html
-server.source.js
+{
+  "name": "nyota-stk-server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "html-minifier-terser": "^7.2.0",
+    "javascript-obfuscator": "^5.5.0"
+  }
+}
